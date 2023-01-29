@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    font-family: Roboto sans-serif;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr  2fr;
+    border: solid;
+    width: 100vw;
+    
+
+}
+
+.main-container .dashboard{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border: solid
+}
+.main-container .dashboard .options div,
+.main-container .dashboard #title
+{
+    display:flex;
+    gap: 10px;
+}
+
+.main-container .dashboard #title{
+    margin-bottom: 40px;
+    text-align: center;
+    align-items: center; 
+    padding: 10px;
+}
+
+.main-container .dashboard .options div{
+    padding-bottom: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.main-container .dashboard .options{
+    padding-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.main-container .header{
+
+    
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    border:solid;
+}
+
+.main-container .header .header-section{
+    display: flex;
+    justify-content:space-between;
+    border: solid;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding:10px;
+    width:1fr;
+}
+
+.main-container .main-content{
+    border: solid;
+    grid-row-start:2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.main-content .projects{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+    padding:10px;
+
+}
+.main-content .project{
+    padding: 5px;
+    border:solid;
+}
+
+
+
+.main-container .sidebar{
+    grid-row-start:2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    padding-left: 10px
+}
+.main-container .sidebar .annoucements{
+    padding-top: 10px;
+    
+    
+}
+
+.main-container .sidebar .an-body{
+
+    border:solid;
+    padding: 10px;
+}
+
+.main-container .sidebar .trends{
+    border:solid;
+    padding: 10px;
+}
+.main-container .sidebar .trends .trend{
+    display:flex;
+    padding:6px;
+    gap:10px
+
+}
